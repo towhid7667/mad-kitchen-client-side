@@ -18,5 +18,5 @@ const DetailsHere = ({detail}) => {
         </div>
     );
 };
-
+ 
 export default DetailsHere;

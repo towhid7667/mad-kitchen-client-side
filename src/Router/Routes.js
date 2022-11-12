@@ -3,6 +3,8 @@ import Main from "../Layout/Main";
 import Allfoods from "../Pages/AllFOODS/Allfoods";
 import FoodDetails from "../Pages/FoodDETAILS/FoodDetails";
 import Home from "../Pages/Home/Home";
+import Login from "../Pages/Login/Login";
+import Register from './../Pages/Register/Register';
 
 
 export const router = createBrowserRouter([
@@ -26,6 +28,14 @@ export const router = createBrowserRouter([
                 loader : ({params})=> fetch(`https://mad-kitchen-server-towhid7667.vercel.app/allfoods/${params.id}`)
 
             },
+            {
+                path: '/login',
+                element: <Login></Login>
+            },
+            {
+                path: '/register',
+                element: <Register></Register>
+            }
         ]
 
     }
