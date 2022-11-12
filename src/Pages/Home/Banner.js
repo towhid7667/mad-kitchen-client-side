@@ -1,37 +1,28 @@
 import React from 'react';
-
-const Banner = () => {
+import './Banner.css'
+const Banner = ({slide}) => {
+    const {id, image, prev,next} = slide;
+   
     return (
-        <div className="carousel w-full ">
-        <div id="slide1" className="carousel-item relative w-full">
-          <img alt='' src="https://images.pexels.com/photos/744780/pexels-photo-744780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="w-full" />
+        
+        <div id={`slide${id}`} className="carousel-item relative w-full bg-gradient-to-r from-orange-700 to-blue-500">
+          <img alt='' src={image} className="w-full opacity-80  " />
+
+          <div className="absolute flex justify-between transform -translate-x-1/2 -translate-y-1/2  left-1/2  top-1/4">
+            <h1 className='text-[30px] lg:text-[100px] md:text-[70px] font-extrabold text-white text-center leading-tight tracking-widest'>MAD KITCHEN</h1>
+          </div>
+          <div className="absolute flex justify-between transform -translate-y-1/2 -translate-x-1/2 left-1/2 top-1/2">
+            <p className='text-[10px] lg:text-xl md:text-1xl text-center text-white'>A restaurant is a business that prepares and serves food and drinks to customers. Meals are generally served and eaten on the premises, but many restaurants also offer take-out and food delivery services.</p>
+          </div>
+          <div className="absolute flex justify-between transform -translate-y-1/2 -translate-x-1/2 left-1/2 top-3/4 my-3 lg:my-0 md:my-0 pb-0 lg:pb-40 md:pb-28">
+            <button className='btn'>Explore Foods</button>
+          </div>
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" className="btn btn-circle">❮</a> 
-            <a href="#slide2" className="btn btn-circle">❯</a>
+            <a href={`#slide${prev}`} className="btn btn-circle">❮</a> 
+            <a href={`#slide${next}`} className="btn btn-circle">❯</a>
           </div>
         </div> 
-        <div id="slide2" className="carousel-item relative w-full">
-          <img alt='' src="https://images.pexels.com/photos/2696064/pexels-photo-2696064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="w-full" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" className="btn btn-circle">❮</a> 
-            <a href="#slide3" className="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="slide3" className="carousel-item relative w-full">
-          <img alt='' src="https://images.pexels.com/photos/1310777/pexels-photo-1310777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="w-full" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" className="btn btn-circle">❮</a> 
-            <a href="#slide4" className="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="slide4" className="carousel-item relative w-full">
-          <img alt='' src="https://images.pexels.com/photos/262918/pexels-photo-262918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="w-full" />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" className="btn btn-circle">❮</a> 
-            <a href="#slide1" className="btn btn-circle">❯</a>
-          </div>
-        </div>
-      </div>
+        
     );
 };
 
