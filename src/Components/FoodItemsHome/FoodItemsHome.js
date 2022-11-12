@@ -1,5 +1,6 @@
 import React , { useEffect, useState } from 'react';
 import FoodsHome from './../../Pages/Home/Foods/FoodsHome';
+import { Link } from 'react-router-dom';
 
 const FoodItemsHome = () => {
     const  [foods, setFoods] = useState([]);
@@ -21,7 +22,7 @@ const FoodItemsHome = () => {
           }
           </div>
           <div className='flex justify-center my-10'>
-          <button className='btn px-10'>See ALL</button>
+          <Link to= '/allfoods' className='btn px-10'>See ALL</Link>
           </div>
         </div>
     );

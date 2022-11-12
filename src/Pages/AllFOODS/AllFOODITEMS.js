@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const AllFOODITEMS = ({foods}) => {
+
     const {_id, img, title, body, price} = foods;
     return (
         <div>
@@ -12,7 +13,7 @@ const AllFOODITEMS = ({foods}) => {
 <p>{body.slice(0,150)}...</p>
 <p>{price}</p>
 <div className="card-actions justify-end">
-<Link to={`/foodDetails/${_id}`} className="btn btn-primary text-white font-bold">See Details</Link>
+<Link to={`/allfoods/${_id}`} className="btn btn-primary text-white font-bold">See Details</Link>
 </div>
 </div>
 </div>

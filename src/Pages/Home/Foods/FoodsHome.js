@@ -12,7 +12,7 @@ const FoodsHome = ({food}) => {
     <p>{body.slice(0,150)}...</p>
     <p>{price}</p>
     <div className="card-actions justify-end">
-      <Link className="btn btn-primary text-white font-bold">See Details</Link>
+      <Link to={`/allfoods/${_id}`} className="btn btn-primary text-white font-bold">See Details</Link>
     </div>
   </div>
 </div>
