@@ -1,12 +1,12 @@
 import React from 'react';
-import './Banner.css'
+
 const Banner = ({slide}) => {
     const {id, image, prev,next} = slide;
    
     return (
         
         <div id={`slide${id}`} className="carousel-item relative w-full bg-gradient-to-r from-orange-700 to-blue-500">
-          <img alt='' src={image} className="w-full opacity-80  " />
+          <img alt='' src={image} className="w-full opacity-70  " />
 
           <div className="absolute flex justify-between transform -translate-x-1/2 -translate-y-1/2  left-1/2  top-1/4">
             <h1 className='text-[30px] lg:text-[100px] md:text-[70px] font-extrabold text-white text-center leading-tight tracking-widest'>MAD KITCHEN</h1>

@@ -6,7 +6,7 @@ import Banner from './Banner';
 
 const bannerData = [
     {
-        image: 'https://images.pexels.com/photos/262918/pexels-photo-262918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        image: 'https://images.pexels.com/photos/744780/pexels-photo-744780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         prev: 6,
         id: 1,
         next: 2
@@ -24,7 +24,7 @@ const bannerData = [
         next: 4
     },
     {
-        image: 'https://images.pexels.com/photos/744780/pexels-photo-744780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        image: 'https://images.pexels.com/photos/262918/pexels-photo-262918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         prev: 3,
         id: 4,
         next: 5
@@ -44,7 +44,7 @@ const bannerData = [
 ]
 const BannerItem = () => {
     return (
-        <div className="carousel w-full">
+        <div className="carousel w-full max-w-screen-xl mx-auto">
         {
             bannerData.map(slide => <Banner key={slide.id} slide ={slide}></Banner>)
         }
