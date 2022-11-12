@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const FoodsHome = ({food}) => {
     const {_id, img, title, body, price} = food;
@@ -11,7 +12,7 @@ const FoodsHome = ({food}) => {
     <p>{body.slice(0,150)}...</p>
     <p>{price}</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary text-white font-bold">See Details</button>
+      <Link className="btn btn-primary text-white font-bold">See Details</Link>
     </div>
   </div>
 </div>

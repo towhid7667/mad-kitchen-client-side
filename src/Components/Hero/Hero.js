@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
@@ -8,7 +9,7 @@ const Hero = () => {
           <div>
             <h1 className="text-5xl font-bold text-white">MAD KITCHEN!</h1>
             <p className="py-6 text-justify text-white">A restaurant is a business that prepares and serves food and drinks to customers. Meals are generally served and eaten on the premises, but many restaurants also offer take-out and food delivery services. Restaurants vary greatly in appearance and offerings, including a wide variety of cuisines and service models ranging from inexpensive fast-food restaurants and cafeterias to mid-priced family restaurants, to high-priced luxury establishments.</p>
-            <button className="btn btn-primary text-white font-bold">Get Started</button>
+            <Link className="btn px-8" to='/register'>Register</Link>
           </div>
         </div>
       </div>
