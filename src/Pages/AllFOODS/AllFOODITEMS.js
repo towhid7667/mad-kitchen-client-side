@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 const AllFOODITEMS = ({foods}) => {
 
     const {_id, img, title, body, price} = foods;
+    
     return (
         <div>
         <div className="card w-96 lg:w-96 md:w-72 bg-base-100 shadow-xl h-[500px]">

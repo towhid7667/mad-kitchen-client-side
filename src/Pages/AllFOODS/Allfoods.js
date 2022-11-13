@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import AddItem from '../../Components/AddItem/AddItem';
 import AllFOODITEMS from './AllFOODITEMS';
 
 const Allfoods = () => {
@@ -13,7 +14,7 @@ const Allfoods = () => {
             allfoods.map(foods => <AllFOODITEMS key ={foods._id} foods ={foods}></AllFOODITEMS>)
           }
           </div>
-
+          <AddItem></AddItem>
         </div>
     );
 };

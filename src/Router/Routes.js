@@ -7,6 +7,7 @@ import Login from "../Pages/Login/Login";
 import Register from './../Pages/Register/Register';
 
 
+
 export const router = createBrowserRouter([
     {
         path : '/',
@@ -35,7 +36,8 @@ export const router = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register></Register>
-            }
+            },
+           
         ]
 
     }
