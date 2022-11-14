@@ -1,7 +1,11 @@
 import React from 'react';
-
+import {Helmet} from "react-helmet";
 const Blogs = () => {
     return (
+      <div>
+          <Helmet>
+            <title>Mad-kitchen-blogs</title>
+        </Helmet>
         <div className='max-w-screen-xl mx-auto'>
             <div className="hero min-h-screen bg-base-200 my-5 p-10 rounded-lg ">
   <div className="hero-content flex-col lg:flex-row-reverse">
@@ -40,6 +44,7 @@ What is JWT (JSON Web Token)? JSON Web Token (JWT) is an open standard (RFC 7519
     </div>
   </div>
 </div>
+        </div>
         </div>
     );
 };

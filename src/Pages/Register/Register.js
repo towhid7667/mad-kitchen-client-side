@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
-import toast from 'react-hot-toast';
-import { useNavigate, Link } from 'react-router-dom';
+
+import { useNavigate,  } from 'react-router-dom';
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -11,6 +11,7 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import { AuthContext } from './../../UserContext/ContextProvider';
 import { useLocation } from 'react-router-dom';
+import {Helmet} from "react-helmet";
 
 
 const Register = () => {
@@ -53,6 +54,9 @@ const Register = () => {
 
     return (
         <div>
+            <Helmet>
+            <title>Mad-kitchen-register</title>
+        </Helmet>
             <form onSubmit={ handleSubmit} className="bg-base-200 ">
       <div className="hero min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse ">

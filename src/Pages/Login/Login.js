@@ -13,6 +13,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import { GoogleAuthProvider } from 'firebase/auth';
 import { AuthContext } from './../../UserContext/ContextProvider';
+import {Helmet} from "react-helmet";
 
 const Login = () => {
   const [error, setError] = useState("");
@@ -63,6 +64,10 @@ const Login = () => {
   };
 
   return (
+    <div>
+       <Helmet>
+            <title>Mad-kitchen-log in</title>
+        </Helmet>
     <form onSubmit={ handleSignIn} className="bg-base-200 ">
       <div className="hero min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse overflow-x-hidden lg:overflow-auto lg:mr-20">
@@ -135,6 +140,7 @@ const Login = () => {
         </div>
       </div>
     </form>
+    </div>
   );
 };
 

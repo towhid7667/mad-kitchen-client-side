@@ -3,7 +3,7 @@ import { useLoaderData, useNavigate } from 'react-router-dom';
 
 import AllFOODITEMS from './AllFOODITEMS';
 import AddItem from './../../Components/AddItem/AddItem';
-
+import {Helmet} from "react-helmet";
 
 const Allfoods = () => {
     const listfoods = useLoaderData(); 
@@ -32,7 +32,9 @@ const Allfoods = () => {
     }
     return (
         <div>
-             
+              <Helmet>
+            <title>Mad-kitchen-All Foods</title>
+        </Helmet>
           <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 lg:w-10/12 md:w-10/12 w-11/12 gap-4  my-10 lg:mx-auto md:mx-auto mx-3'>
             
           {

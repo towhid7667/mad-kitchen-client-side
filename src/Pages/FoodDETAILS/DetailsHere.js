@@ -1,10 +1,13 @@
 import React from 'react';
-
+import {Helmet} from "react-helmet";
 const DetailsHere = ({detail}) => {
     const {img,title,body,price} = detail;
     
     return (
         <div>
+           <Helmet>
+            <title>`Mad-kitchen-FoodDetails-{title}`</title>
+        </Helmet>
               <div className="hero min-h-screen bg-base-200 text-center">
   <div className="hero-content flex flex-col">
     <img alt='' src={img} className="lg:w-1/2 md:w-1/2 w-full rounded-lg shadow-2xl" />
