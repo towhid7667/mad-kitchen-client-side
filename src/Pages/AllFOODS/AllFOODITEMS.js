@@ -3,7 +3,7 @@ import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 import { Link } from 'react-router-dom';
 
-const AllFOODITEMS = ({foods}) => {
+const AllFOODITEMS = ({foods, handleDelete}) => {
 
     const {_id, img, title, body, price} = foods;
 
@@ -19,7 +19,7 @@ const AllFOODITEMS = ({foods}) => {
 <p>{price}</p>
 <div className="card-actions justify-end">
 <Link to={`/allfoods/${_id}`} className="btn btn-primary text-white font-bold">See Details</Link>
-{/* <Link to={`/updateInfo/${_id}`} className="btn btn-primary text-white font-bold">Update Info</Link> */}
+<button onClick={() => handleDelete(_id)} className="btn btn-primary text-white font-bold">Delete</button>
 </div>
 </div>
 </div>

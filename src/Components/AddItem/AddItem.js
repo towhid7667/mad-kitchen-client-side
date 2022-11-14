@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const AddItem = () => {
+    const navigate = useNavigate();
 
     const handleAddItem = event => {
         event.preventDefault();
@@ -29,6 +31,7 @@ const AddItem = () => {
             console.log(data)
             if(data.acknowledged){
                 alert('Item Added successfully')
+                navigate('/allfoods')
                 form.reset();
                 
             }
@@ -42,7 +45,7 @@ const AddItem = () => {
                 <input type="text" name='imageurl' className='w-3/4 lg:w-1/2 md:w-1/2 my-2 px-2 py-3 rounded-lg text-center' placeholder='Image URL'/>
                 <input type="text" name='giventitle' className='uppercase w-3/4 lg:w-1/2 md:w-1/2 my-2 px-2 py-3 rounded-lg text-center' placeholder='Title'/>
                 <input type="text" name='givenprice' className='w-3/4 lg:w-1/2 md:w-1/2 my-2 px-2 py-3 rounded-lg text-center' placeholder='Price with $Sign'/>
-                <input name='description' className="textarea textarea-bordered w-3/4  lg:w-1/2 md:w-1/2 my-2 px-2 py-10 rounded-lg text-center" placeholder="Description"></input >
+                <input name='description' className="textarea textarea-bordered w-3/4  lg:w-1/2 md:w-1/2 my-2 px-2 py-10 rounded-lg text-center wrap" placeholder="Description"></input >
                 <input type="submit" value="Submit" className='btn my-5 px-8' />
             </form>
         </div>

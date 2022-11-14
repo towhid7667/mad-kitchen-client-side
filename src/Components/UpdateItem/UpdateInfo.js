@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const UpdateInfo = ({ItemData}) => {
     const[itemInfo, setItemInfo ] = useState(ItemData);
-    console.log(itemInfo)
+    // console.log(itemInfo)
+    const navigate = useNavigate();
 
     const handleUpdate = event => {
         event.preventDefault();
@@ -34,6 +36,7 @@ const UpdateInfo = ({ItemData}) => {
         .then(data => {
                 if(data.modifiedCount > 0){
                     alert('Item Updated');
+                    navigate('/allfoods')
                    
                 }
         });
