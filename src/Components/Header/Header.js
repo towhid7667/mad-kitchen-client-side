@@ -46,7 +46,7 @@ const Header = () => {
           <li><Link to='/blogs'>Blogs</Link></li>
           </ul>
         </div>
-        <Link className="btn btn-ghost normal-case text-xl font-bold">MAD KITCHEN<GiCampCookingPot></GiCampCookingPot></Link>
+        <Link to = '/' className="btn btn-ghost normal-case text-xl font-bold">MAD KITCHEN<GiCampCookingPot></GiCampCookingPot></Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0 font-bold">
