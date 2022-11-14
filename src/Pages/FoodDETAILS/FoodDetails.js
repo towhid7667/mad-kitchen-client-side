@@ -15,7 +15,10 @@ const FoodDetails = () => {
           {
             details.map(detail => <DetailsHere key={detail._id} detail={detail}></DetailsHere>)
           }
-           <UpdateItem></UpdateItem>
+          <div>
+          <UpdateItem></UpdateItem>
+          </div>
+          
         </div>
        
     );

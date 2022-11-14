@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const UpdateInfo = ({ItemData}) => {
     const[itemInfo, setItemInfo ] = useState(ItemData);
     // console.log(itemInfo)
+
     const navigate = useNavigate();
 
     const handleUpdate = event => {
@@ -52,7 +53,7 @@ const UpdateInfo = ({ItemData}) => {
             <input  defaultValue={ItemData.title} type="text" name='giventitle' className='uppercase w-3/4 lg:w-1/2 md:w-1/2 my-2 px-2 py-3 rounded-lg text-center' placeholder='Title'/>
             <input  defaultValue={ItemData.price} type="text" name='givenprice' className='w-3/4 lg:w-1/2 md:w-1/2 my-2 px-2 py-3 rounded-lg text-center' placeholder='Price with $Sign'/>
             <input  defaultValue={ItemData.body} type="text" name='description' className="textarea textarea-bordered w-3/4  lg:w-1/2 md:w-1/2 my-2 px-2 py-10 rounded-lg text-center" placeholder="Description"></input >
-            <input type="submit" value="Submit" className='btn my-5 px-8' />
+            <button  type="submit"  className='btn my-5 px-8'>Submit</button>
         </form>
     </div>
     );
