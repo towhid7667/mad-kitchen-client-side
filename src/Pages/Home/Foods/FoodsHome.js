@@ -15,7 +15,7 @@ const FoodsHome = ({food}) => {
     <p>{price}</p>
     <div className="card-actions justify-end">
       <Link to={`/allfoods/${_id}`} className="btn btn-primary text-white font-bold">See Details</Link>
-      <Link to={`/orders/${_id}`} className="btn btn-primary text-white font-bold">Order Now</Link>
+      {/* <Link to={`/orders/${_id}`} className="btn btn-primary text-white font-bold">Order Now</Link> */}
     </div>
   </div>
 </div>

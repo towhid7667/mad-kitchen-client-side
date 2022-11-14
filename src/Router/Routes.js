@@ -3,12 +3,12 @@ import Main from "../Layout/Main";
 import Allfoods from "../Pages/AllFOODS/Allfoods";
 import FoodDetails from "../Pages/FoodDETAILS/FoodDetails";
 import Home from "../Pages/Home/Home";
-import Login from "../Pages/Login/Login";
-
+import Login from "../Pages/Login/Login"; 
 import Register from './../Pages/Register/Register';
 import UpdateItem from './../Components/UpdateItem/UpdateItem';
 import Four from "../Components/404/Four";
 import Blogs from "../Pages/Blogs";
+import PrivateRoute from './PrivateRoute';
 
 
 
@@ -24,13 +24,13 @@ export const router = createBrowserRouter([
             },
             {
                 path : '/allfoods',
-                element: <Allfoods></Allfoods>,
+                element: <PrivateRoute><Allfoods></Allfoods></PrivateRoute>,
                 loader : ()=> fetch('https://mad-kitchen-server-towhid7667.vercel.app/allfoods')
 
             },
             {
                 path : '/allfoods/:id',
-                element: <FoodDetails></FoodDetails>,
+                element: <PrivateRoute><FoodDetails></FoodDetails></PrivateRoute>,
                 loader : ({params})=> fetch(`https://mad-kitchen-server-towhid7667.vercel.app/allfoods/${params.id}`)
 
             },

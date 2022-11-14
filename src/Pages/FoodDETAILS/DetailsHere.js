@@ -11,7 +11,7 @@ const DetailsHere = ({detail}) => {
       <h1 className="text-5xl font-bold">{title}</h1>
       <p className="py-6 lg:w-1/2 md:w-1/2 w-full mx-auto">{body}</p>
       <p className="py-6 font-extrabold text-2xl">{price}</p>
-      <button className="btn btn-primary text-white font-bold">Order NOW</button>
+      <button className="btn btn-primary text-white font-bold">Delete This Item</button>
     </div>
   </div>
 </div>

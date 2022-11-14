@@ -17,8 +17,7 @@ const Blogs = () => {
     <img alt='' src="https://images.pexels.com/photos/3585089/pexels-photo-3585089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="max-w-sm rounded-lg shadow-2xl" />
     <div>
       <h1 className="text-5xl font-bold">What is JWT, and how does it work?</h1>
-      <p className="py-6">বাংলায়
-In English
+      <p className="py-6">
 What is JWT (JSON Web Token)? JSON Web Token (JWT) is an open standard (RFC 7519) for securely transmitting information between parties as JSON object. It is compact, readable and digitally signed using a private key/ or a public key pair by the Identity Provider(IdP).</p>
     </div>
   </div>
