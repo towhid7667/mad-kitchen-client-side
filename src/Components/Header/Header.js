@@ -43,8 +43,6 @@ const Header = () => {
           >
           <li><Link to='/'>Home</Link></li>
           <li><Link to='/allfoods'>All Foods</Link></li>
-          <li><Link to='/orders'>Orders</Link></li>
-          <li><Link to='/login'>Log in</Link></li>
           <li><Link to='/blogs'>Blogs</Link></li>
           </ul>
         </div>
@@ -54,7 +52,7 @@ const Header = () => {
         <ul className="menu menu-horizontal p-0 font-bold">
         <li><Link to='/'>Home</Link></li>
           <li><Link to='/allfoods'>All Foods</Link></li>
-          <li><Link to='/orders'>Orders</Link></li>
+          
           <li><Link to='/blogs'>Blogs</Link></li>
         </ul>
       </div>

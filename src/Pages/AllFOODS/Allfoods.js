@@ -1,7 +1,9 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import AddItem from '../../Components/AddItem/AddItem';
+
 import AllFOODITEMS from './AllFOODITEMS';
+// import AddItem from './../../Components/AddItem/AddItem';
+// import UpdateItem from '../../Components/UpdateItem/UpdateItem';
 
 const Allfoods = () => {
     const allfoods = useLoaderData(); 
@@ -14,7 +16,8 @@ const Allfoods = () => {
             allfoods.map(foods => <AllFOODITEMS key ={foods._id} foods ={foods}></AllFOODITEMS>)
           }
           </div>
-          <AddItem></AddItem>
+         {/* <AddItem></AddItem> */}
+         {/* <UpdateItem></UpdateItem> */}
         </div>
     );
 };

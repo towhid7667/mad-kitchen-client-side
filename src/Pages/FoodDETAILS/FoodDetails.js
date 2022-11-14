@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import UpdateItem from '../../Components/UpdateItem/UpdateItem';
 import DetailsHere from './DetailsHere';
 
 const FoodDetails = () => {
@@ -11,7 +12,9 @@ const FoodDetails = () => {
           {
             details.map(detail => <DetailsHere key={detail._id} detail={detail}></DetailsHere>)
           }
+           <UpdateItem></UpdateItem>
         </div>
+       
     );
 };
 
